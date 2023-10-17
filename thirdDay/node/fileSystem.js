@@ -49,13 +49,18 @@ fs.appendFile('fazil.html','\n <h1>Hello Boys</h1>' , (err)=>{
 
 // deleted file
 
-fs.unlink("./hai.txt",()=>{
+fs.unlink("./hai.txt",(err)=>{
+    if(err){
+        console.log(err);
+    }else{
     console.log('file deleted');
+    }
 })
 
+// simple method to delete a file
 
-fs.unlink("./hai.txt",()=>{
-    console.log('file deleted');
-})
+// fs.unlink("./hai.txt",()=>{
+//     console.log('file deleted');
+// })
 
 
