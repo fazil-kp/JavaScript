@@ -27,7 +27,7 @@ fs.writeFile('data.txt','Hello Boys',(err)=>{
 //     }
 // })
 
-
+// create file 
 fs.appendFile('fazil.html','\n <h1>Hello Boys</h1>' , (err)=>{
     if (err){
         console.log(err);

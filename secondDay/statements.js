@@ -11,3 +11,8 @@ if (a>b  && a>c){
 }else{
     console.log('c is big');
 }
+
+// ternary operator
+
+var d = true
+d? console.log(b):console.log(c);
